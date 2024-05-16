@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MacMapkerson.TanqueAtaqueSombrasVB98">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>TanqueAtaqueSombrasVB98.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.TransporteRapidoTAXIN66">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>TransporteRapidoTAXIN66.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.TransporteMX7899">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>TransporteMX7899.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.FabricaEjercito">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>FabricaEjercito.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.Validador01">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validador01.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.ColeccionEjercito">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAgAAAEQAAAk=</HashCode>
+      <FileName>ColeccionEjercito.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.InfanteriaBasica">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>InfanteriaBasica.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.Ametrallador">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>Ametrallador.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.Sanitario">
+    <Position X="8.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>Sanitario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.CanonAntiaereo">
+    <Position X="10.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>CanonAntiaereo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.TorpederoMovil">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>TorpederoMovil.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MacMapkerson.Canon">
+    <Position X="11.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>Canon.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="MacMapkerson.IMilitar">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
+      <FileName>IMilitar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MacMapkerson.IFabricaEjercito">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFabricaEjercito.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MacMapkerson.IValidador">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IValidador.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MacMapkerson.IColeccionEjercito">
+    <Position X="13.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAgAAAEQAAAE=</HashCode>
+      <FileName>IColeccionEjercito.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MacMapkerson.EnumTipoArma">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBAAAAAIAAABAAAAAAAAEAAIgAAAAAAAAAAAEQAA=</HashCode>
+      <FileName>EnumTipoArma.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
