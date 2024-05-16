@@ -8,8 +8,6 @@ namespace MacMapkerson
     public class FabricaEjercito : IFabricaEjercito
     {
         public IValidador Validador { get ; set ; }
-
-
         public IMilitar DameEjercito(EnumTipoArma tipo)
         {
             IMilitar militar = null;
@@ -27,7 +25,5 @@ namespace MacMapkerson
             }
             return militar;
         }
-    }
-
-        
-    }
+    }        
+}

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="MacMapkerson.TanqueAtaqueSombrasVB98">
-    <Position X="6.5" Y="4.5" Width="1.5" />
+    <Position X="7" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
       <FileName>TanqueAtaqueSombrasVB98.cs</FileName>
@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MacMapkerson.TransporteRapidoTAXIN66">
-    <Position X="4.75" Y="4.5" Width="1.5" />
+    <Position X="7" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
       <FileName>TransporteRapidoTAXIN66.cs</FileName>
@@ -17,7 +17,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MacMapkerson.TransporteMX7899">
-    <Position X="6.5" Y="0.75" Width="1.5" />
+    <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
       <FileName>TransporteMX7899.cs</FileName>
@@ -27,7 +27,7 @@
   <Class Name="MacMapkerson.FabricaEjercito">
     <Position X="2.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAA=</HashCode>
       <FileName>FabricaEjercito.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -41,15 +41,15 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MacMapkerson.ColeccionEjercito">
-    <Position X="13.5" Y="3.25" Width="1.5" />
+    <Position X="13.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAgAAAEQAAAk=</HashCode>
+      <HashCode>AAAAAAEAAAIYAAgAAAABEAAAEAAAEAAgQgAAAEQAAAE=</HashCode>
       <FileName>ColeccionEjercito.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MacMapkerson.InfanteriaBasica">
-    <Position X="8.75" Y="0.75" Width="1.5" />
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
       <FileName>InfanteriaBasica.cs</FileName>
@@ -57,7 +57,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MacMapkerson.Ametrallador">
-    <Position X="8.75" Y="3.5" Width="1.5" />
+    <Position X="8.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
       <FileName>Ametrallador.cs</FileName>
@@ -73,7 +73,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MacMapkerson.CanonAntiaereo">
-    <Position X="10.75" Y="0.75" Width="1.5" />
+    <Position X="10.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
       <FileName>CanonAntiaereo.cs</FileName>
@@ -89,7 +89,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MacMapkerson.Canon">
-    <Position X="11.25" Y="6" Width="1.5" />
+    <Position X="10.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
       <FileName>Canon.cs</FileName>
@@ -97,7 +97,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="MacMapkerson.IMilitar">
-    <Position X="4.75" Y="1.75" Width="1.5" />
+    <Position X="4.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAQQIAAAAQAAAAAAAAAgAAQ=</HashCode>
       <FileName>IMilitar.cs</FileName>
@@ -120,7 +120,7 @@
   <Interface Name="MacMapkerson.IColeccionEjercito">
     <Position X="13.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAgAAAEQAAAE=</HashCode>
+      <HashCode>AAIAAAAAAEAAAAAAAAAAAAAAEAAAEAAAAgAAAEQAAAE=</HashCode>
       <FileName>IColeccionEjercito.cs</FileName>
     </TypeIdentifier>
   </Interface>
