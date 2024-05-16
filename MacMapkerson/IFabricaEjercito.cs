@@ -6,7 +6,8 @@ using System.Text;
 namespace MacMapkerson
 {
     public interface IFabricaEjercito
-    {
+    { 
+
         IValidador Validador { get; set; }
         IMilitar DameEjercito(EnumTipoArma tipo);
     }
