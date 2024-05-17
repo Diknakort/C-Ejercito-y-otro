@@ -9,10 +9,6 @@ namespace MacMapkerson
     {
         bool Add(IMilitar elemento);
         int dameCuantos();
-        double damePotenciaDeFuegoTotal();
-        double dameBlindajeTotal();
-        double dameCapMovimiento();
-        int dameCosteAcumulado();
         double dameCapacidadMilitar();
         object Listar();
     }

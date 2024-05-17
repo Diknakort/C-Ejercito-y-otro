@@ -8,9 +8,9 @@ namespace MacMapkerson
     public interface IMilitar
     {
         int Precio { get; set; }
-        double Blindaje { get; set; }
-        double Velocidad { get; set; }
-        double PotenciaDeFuego { get; set; }
+        IBlindaje Blindaje { get; set; }
+        IMovimiento Velocidad { get; set; }
+        IPotencia PotenciaDeFuego { get; set; }
         string Tipo { get; set; }
 
         void dameEjercito();

@@ -7,23 +7,15 @@ namespace MacMapkerson
 {
     public class Ametrallador : IMilitar
     {
-        public Ametrallador(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
-        {
-            this.Precio = Precio;
-            this.Blindaje = Blindaje;
-            this.Velocidad = Velocidad;
-            this.PotenciaDeFuego = PotenciaDeFuego;
-        }
-
-        public int Precio { get; set; }
-        public double Blindaje { get; set; }
-        public double Velocidad { get; set; }
-        public double PotenciaDeFuego { get; set; }
-        public string Tipo { get; set; }
+        public int Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public IBlindaje Blindaje { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public IMovimiento Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public IPotencia PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Tipo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public double dameCoefMilitar()
         {
-            return (PotenciaDeFuego * Velocidad) / 2 / (100 - Blindaje);
+            throw new NotImplementedException();
         }
 
         public void dameEjercito()
@@ -32,3 +24,28 @@ namespace MacMapkerson
         }
     }
 }
+//        public Ametrallador(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
+//        {
+//            this.Precio = Precio;
+//            this.Blindaje = Blindaje;
+//            this.Velocidad = Velocidad;
+//            this.PotenciaDeFuego = PotenciaDeFuego;
+//        }
+
+//        public int Precio { get; set; }
+//        public string Tipo { get; set; }
+//        IBlindaje IMilitar.Blindaje { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+//        IMovimiento IMilitar.Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+//        IPotencia IMilitar.PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+//        public double dameCoefMilitar()
+//        {
+//            return (PotenciaDeFuego * Velocidad) / 2 / (100 - Blindaje);
+//        }
+
+//        public void dameEjercito()
+//        {
+//            throw new NotImplementedException();
+//        }
+//    }
+//}

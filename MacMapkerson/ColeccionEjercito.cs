@@ -5,16 +5,22 @@ using System.Text;
 
 namespace MacMapkerson
 {
-    public class ColeccionEjercito : IColeccionEjercito
+    public class ColeccionEjercito : IColeccionEjercito, IMilitar
     {
         List<IMilitar> militarList = new List<IMilitar>();
 
         double totalCapacidadMilitar = 0;
         double totalVelocidad = 0;
-        double TotalPotenciaDeFuego =0;
+        double TotalPotenciaDeFuego = 0;
         int numeroUnidades = 0;
         int totalPrecio = 0;
         double totalBlindaje = 0;
+
+        public int Precio { get { return totalPrecio; } set { } }
+        public double Blindaje { get { return totalBlindaje; } set { } }
+        public double Velocidad { get { return totalVelocidad; } set { } }
+        public double PotenciaDeFuego { get { return TotalPotenciaDeFuego; } set { } }
+        public string Tipo { get; set; }
 
         bool IColeccionEjercito.Add(IMilitar elemento)
         {
@@ -70,6 +76,16 @@ namespace MacMapkerson
                 Console.WriteLine(item);
             }
             return this;
+        }
+
+        public void dameEjercito()
+        {
+            throw new NotImplementedException();
+        }
+
+        public double dameCoefMilitar()
+        {
+            return (TotalPotenciaDeFuego * totalVelocidad) / 2 / (100 - totalBlindaje);
         }
     }
 }

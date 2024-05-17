@@ -1,19 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using MacMapkerson;
 
-//Console.WriteLine("Vuecencia General MacMapekerson");
-//Console.WriteLine($"");
-//Console.WriteLine("¿Quiere configurar su ejercito?");
-
 IValidador MiValidador = new Validador01();
 IFabricaEjercito MiFabrica = new FabricaEjercito();
 MiFabrica.Validador = MiValidador;
 
 IColeccionEjercito Militronchos = new ColeccionEjercito();
+IColeccionEjercito Pistolos = new ColeccionEjercito();
 
-Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteMX7899));
 Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TanqueAtaqueSombrasVB98));
 Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteRapidoTAXIN66));
+Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteMX7899));
 Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Ametrallador));
 Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.InfanteriaBasica));
 Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Sanitario));
@@ -21,117 +18,7 @@ Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.CanonAntiaereo));
 Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Canon));
 Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TorpederoMovil));
 
-Console.WriteLine("El ejercito BASE consiste en los siguientes datos:");
-Console.WriteLine($"Elementos que hay en el Ejercito:  {Militronchos.dameCuantos()}");
-Console.WriteLine($"Potencia de fuego del Ejercito:  {Militronchos.damePotenciaDeFuegoTotal()}");
-Console.WriteLine($"Blindaje Total del Ejercito:  {Militronchos.dameBlindajeTotal()}");
-Console.WriteLine($"Capacidad de movimiento del Ejercito:  {Militronchos.dameCapMovimiento()}");
-Console.WriteLine($"Coste del Ejercito:  {Militronchos.dameCosteAcumulado()}");
-Console.WriteLine($"Capacidad Militar del Ejercito:  {Militronchos.dameCapacidadMilitar()}");
-
-
-//var selector = "";
-
-//string Caballeria()
-//{
-//    var entrada = "";
-//    while (entrada.ToUpper() != "X")
-//    {
-//        entrada = MuestraCaballeria();
-//        switch (entrada)
-//        {
-//            case "1":
-//                Console.WriteLine("Seleccionaste Caballeria");
-//                Console.WriteLine("Selecciona una opción:");
-//;               Console.WriteLine("Selecciona una opción:");
-//                int opcionCaballeria = Convert.ToInt32(Console.ReadLine());
-
-//                // Crear el objeto correspondiente a la opción seleccionada y añadirlo a Militronchos
-//                switch (opcionCaballeria)
-//                {
-//                    case 1:
-//                        // Añadir un jinete a Militronchos
-//                        Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteMX7899));
-//                        break;
-//                    case 2:
-//                        // Añadir un vehículo a Militronchos
-//                        Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TanqueAtaqueSombrasVB98));
-//                        break;
-//                    case 3:
-//                        // Añadir un vehículo a Militronchos
-//                        Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteRapidoTAXIN66));
-//                        break;
-//                    default:
-//                        Console.WriteLine("Opción no válida");
-//                        return;
-//                }
-//                break;
-//            case "2":
-//                Infanteria; break;
-//            case "3":
-//                Artilleria; break;
-//        }
-//    }
-//}
-
-//string MuestraCaballeria()
-//{
-//    Console.WriteLine("1 - Transporte MX7899");
-//    Console.WriteLine("2 - Tanque de Ataque Sombras VB98");
-//    Console.WriteLine("3 - Transporte Rapido TAXIN 66");
-//}
-
-
-
-//while (selector.ToUpper() !="0")
-//{
-//    selector = MuestraArmas();
-//    switch (selector)
-//    {
-//        case "1": Caballeria() ; break;
-//        case "2": Infanteria() ; break;
-//        case "3": Artilleria() ; break;
-//    }
-//}
-//string MuestraArmas()
-//{
-//    return Console.ReadLine();
-//}
-
-
-//var entrada = "";
-//while (entrada.ToUpper() != "X")
-//{
-//    entrada = MuestraOpciones();
-//    switch (entrada)
-//    {
-//        case "1":
-//            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteMX7899)); break;
-//        case "2":
-//            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TanqueAtaqueSombrasVB98)); break;
-//        case "3":
-//            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteRapidoTAXIN66)); break;
-//        case "4":
-//            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Ametrallador)); break;
-//        case "5":
-//            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.InfanteriaBasica)); break;
-//        case "6":
-//            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Sanitario)); break;
-//        case "7":
-//            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.CanonAntiaereo)); break;
-//        case "8":
-//            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Canon)); break;
-//        case "9":
-//            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TorpederoMovil)); break;
-//    }
-//}
-
-
-
-
-
 /////////////////////// original 9 opciones /////////////////
-
 
 var entrada = "";
 while (entrada.ToUpper() != "X")
@@ -139,45 +26,20 @@ while (entrada.ToUpper() != "X")
     entrada = MuestraOpciones();
     switch (entrada)
     {
-        case "1":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteMX7899)); break;
-        case "2":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TanqueAtaqueSombrasVB98)); break;
-        case "3":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteRapidoTAXIN66)); break;
-        case "4":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Ametrallador)); break;
-        case "5":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.InfanteriaBasica)); break;
-        case "6":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Sanitario)); break;
-        case "7":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.CanonAntiaereo)); break;
-        case "8":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Canon)); break;
-        case "9":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TorpederoMovil)); break;
-        case "0":
-            Console.WriteLine($"-----------------------------------------------------------");
-            Console.WriteLine($"Elementos que hay en el Ejercito:  {Militronchos.dameCuantos()}");
-            Console.WriteLine($"Potencia de fuego del Ejercito:  {Militronchos.damePotenciaDeFuegoTotal()}");
-            Console.WriteLine($"Blindaje Total del Ejercito:  {Militronchos.dameBlindajeTotal()}");
-            Console.WriteLine($"Capacidad de movimiento del Ejercito:  {Militronchos.dameCapMovimiento()}");
-            Console.WriteLine($"Coste del Ejercito:  {Militronchos.dameCosteAcumulado()}");
-            Console.WriteLine($"Capacidad Militar del Ejercito:  {Militronchos.dameCapacidadMilitar()}");
-            Console.WriteLine($""); 
-            break;
-        case "L":
-            Console.WriteLine($"El ejercito contiene los siguientes elementos:");
-            Console.WriteLine($"{Militronchos.Listar()}"); break;
-        case "l":
-            Console.WriteLine($"El ejercito contiene los siguientes elementos:");
-            Console.WriteLine($"{Militronchos.Listar()}"); break;
+        case "1": Pistolos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteMX7899)); break;
+        case "2": Pistolos.Add(MiFabrica.DameEjercito(EnumTipoArma.TanqueAtaqueSombrasVB98)); break;
+        case "3": Pistolos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteRapidoTAXIN66)); break;
+        case "4": Pistolos.Add(MiFabrica.DameEjercito(EnumTipoArma.Ametrallador)); break;
+        case "5": Pistolos.Add(MiFabrica.DameEjercito(EnumTipoArma.InfanteriaBasica)); break;
+        case "6": Pistolos.Add(MiFabrica.DameEjercito(EnumTipoArma.Sanitario)); break;
+        case "7": Pistolos.Add(MiFabrica.DameEjercito(EnumTipoArma.CanonAntiaereo)); break;
+        case "8": Pistolos.Add(MiFabrica.DameEjercito(EnumTipoArma.Canon)); break;
+        case "9": Pistolos.Add(MiFabrica.DameEjercito(EnumTipoArma.TorpederoMovil)); break;
     }
 }
-
 string MuestraOpciones()
 {
+        Console.Clear();
     Console.WriteLine($"------------------------------------------------------------------------------------");
     Console.WriteLine("");
     Console.WriteLine("Seleccione el elemento a añadir de los siguientes 9:");
@@ -194,8 +56,46 @@ string MuestraOpciones()
     Console.WriteLine("8 - TorpederoMovil");
     Console.WriteLine("9 - Canon");
     Console.WriteLine("");
+    Console.WriteLine("¿Has terminado de añadir unidades?: X para ir a datos de ejercito");
+    return Console.ReadLine();
+}
+
+var entrada2 = "";
+
+
+while (entrada2.ToUpper() != "X")
+{
+    Militronchos.Add((IMilitar)Pistolos);
+    entrada2 = MuestraOpciones2();
+    switch (entrada2)
+    {
+        case "0":
+            Console.Clear(); 
+            Console.WriteLine($"-----------------------------------------------------------");
+            Console.WriteLine("El ejercito TOTAL consiste en los siguientes datos:");
+            Console.WriteLine($"Elementos que hay en el Ejercito:  {Militronchos.dameCuantos()}");
+            Console.WriteLine($"Potencia de fuego del Ejercito:  {((IMilitar)Militronchos).PotenciaDeFuego}");
+            Console.WriteLine($"Blindaje Total del Ejercito:  {((IMilitar)Militronchos).Blindaje}");
+            Console.WriteLine($"Capacidad de movimiento del Ejercito:  {((IMilitar)Militronchos).Velocidad}");
+            Console.WriteLine($"Coste del Ejercito:  {((IMilitar)Militronchos).Precio}");
+            Console.WriteLine($"Capacidad Militar del Ejercito:  {Militronchos.dameCapacidadMilitar()}");
+            Console.WriteLine($"");
+            break;
+        case "L":
+        case "l":
+            Console.WriteLine($"El ejercito contiene los siguientes elementos:");
+            Console.WriteLine($"{Militronchos.Listar()}");
+            Console.WriteLine($"----- Grupo 2 del ejercito contiene -----");
+            Console.WriteLine($"{Pistolos.Listar()}"); break;
+    }
+}
+string MuestraOpciones2()
+{
+
+    Console.WriteLine($"------------------------------------------------------------------------------------");
+    Console.WriteLine("");
     Console.WriteLine("Para ver los datos del ejercito");
-    Console.WriteLine("0 - Mostrar Datos tecnicos de combate");    
+    Console.WriteLine("0 - Mostrar Datos tecnicos de combate");
     Console.WriteLine("L - Mostrar Lista de elementos");
     Console.WriteLine("");
     Console.WriteLine("¿Que Desea Hacer?: X para salir");
