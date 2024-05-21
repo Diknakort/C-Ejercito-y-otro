@@ -7,6 +7,10 @@ namespace MacMapkerson
 {
     public class TransporteMX7899 : IMilitar
     {
+        public TransporteMX7899()
+        {
+        }
+
         public TransporteMX7899(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
         {
             this.Precio = Precio;
@@ -14,11 +18,11 @@ namespace MacMapkerson
             this.Velocidad = Velocidad;
             this.PotenciaDeFuego = PotenciaDeFuego;
         }
-
-        public int Precio { get; set; }
-        public double Blindaje { get; set; }
-        public double Velocidad { get; set; }
-        public double PotenciaDeFuego { get; set; }
+        
+        public int Precio { get; set; } = 4200;
+        public double Blindaje { get; set; } = 1.4;
+        public double Velocidad { get; set; } = 4.5;
+        public double PotenciaDeFuego { get; set; } = 0;
         public string Tipo { get; set; }
 
         public double dameCoefMilitar()

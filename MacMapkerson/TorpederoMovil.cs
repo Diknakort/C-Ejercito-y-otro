@@ -7,6 +7,10 @@ namespace MacMapkerson
 {
     public class TorpederoMovil : IMilitar
     {
+        public TorpederoMovil()
+        {
+        }
+
         public TorpederoMovil(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
         {
             this.Precio = Precio;
@@ -15,12 +19,11 @@ namespace MacMapkerson
             this.PotenciaDeFuego = PotenciaDeFuego;
         }
 
-        public int Precio { get; set; }
-        public double Blindaje { get; set; }
-        public double Velocidad { get; set; }
-        public double PotenciaDeFuego { get; set; }
+        public int Precio { get; set; } = 1350;
+        public double Blindaje { get; set; } = 2;
+        public double Velocidad { get; set; } = 3;
+        public double PotenciaDeFuego { get; set; } = 19;
         public string Tipo { get; set; }
-
         public double dameCoefMilitar()
         {
             return (PotenciaDeFuego * Velocidad) / 2 / (100 - Blindaje);

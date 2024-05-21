@@ -7,6 +7,10 @@ namespace MacMapkerson
 {
     public class Sanitario : IMilitar
     {
+        public Sanitario()
+        {
+        }
+
         public Sanitario(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
         {
             this.Precio = Precio;
@@ -14,11 +18,10 @@ namespace MacMapkerson
             this.Velocidad = Velocidad;
             this.PotenciaDeFuego = PotenciaDeFuego;
         }
-
-        public int Precio { get; set; }
-        public double Blindaje { get; set; }
-        public double Velocidad { get; set; }
-        public double PotenciaDeFuego { get; set; }
+    public int Precio { get; set; } = 500;
+    public double Blindaje { get; set; } = 5;
+    public double Velocidad { get; set; } = 7;
+    public double PotenciaDeFuego { get; set; } = 0;
         public string Tipo { get; set; }
 
         public double dameCoefMilitar()

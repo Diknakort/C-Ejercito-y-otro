@@ -7,6 +7,10 @@ namespace MacMapkerson
 {
     public class Canon : IMilitar
     {
+        public Canon()
+        {
+        }
+
         public Canon(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
         {
             this.Precio = Precio;
@@ -16,10 +20,10 @@ namespace MacMapkerson
         }
 
 
-        public int Precio { get; set; }
-        public double Blindaje { get; set; }
-        public double Velocidad { get; set; }
-        public double PotenciaDeFuego { get; set; }
+        public int Precio { get; set; } = 1100;
+        public double Blindaje { get; set; } = 0;
+        public double Velocidad { get; set; } = 0;
+        public double PotenciaDeFuego { get; set; } = 14;
         public string Tipo { get; set; }
 
         public double dameCoefMilitar()

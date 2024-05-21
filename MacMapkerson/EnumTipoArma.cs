@@ -15,6 +15,7 @@ namespace MacMapkerson
         Sanitario,
         CanonAntiaereo,
         TorpederoMovil,
-        Canon
+        Canon,
+        SuperTanque
     }
 }

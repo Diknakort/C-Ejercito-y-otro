@@ -10,5 +10,6 @@ namespace MacMapkerson
 
         IValidador Validador { get; set; }
         IMilitar DameEjercito(EnumTipoArma tipo);
+        //ISuperTank DameEjercito2(EnumTipoArma tipo);
     }
 }

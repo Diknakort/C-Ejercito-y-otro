@@ -7,6 +7,9 @@ namespace MacMapkerson
 {
     public class TransporteRapidoTAXIN66 : IMilitar
     {
+        public TransporteRapidoTAXIN66()
+        {
+        }
 
         public TransporteRapidoTAXIN66(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
         {
@@ -15,11 +18,10 @@ namespace MacMapkerson
             this.Velocidad = Velocidad;
             this.PotenciaDeFuego = PotenciaDeFuego;
         }
-
-        public int Precio { get; set; }
-        public double Blindaje { get; set; }
-        public double Velocidad { get; set; }
-        public double PotenciaDeFuego { get; set; }
+        public int Precio { get; set; } = 1600;
+        public double Blindaje { get; set; } = 0;
+        public double Velocidad { get; set; } = 12;
+        public double PotenciaDeFuego { get; set; } = 0;
         public string Tipo { get; set; }
 
         public double dameCoefMilitar()
