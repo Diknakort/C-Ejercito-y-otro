@@ -11,13 +11,13 @@ namespace MacMapkerson
         {
         }
 
-        public Sanitario(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
-        {
-            this.Precio = Precio;
-            this.Blindaje = Blindaje;
-            this.Velocidad = Velocidad;
-            this.PotenciaDeFuego = PotenciaDeFuego;
-        }
+        //public Sanitario(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
+        //{
+        //    this.Precio = Precio;
+        //    this.Blindaje = Blindaje;
+        //    this.Velocidad = Velocidad;
+        //    this.PotenciaDeFuego = PotenciaDeFuego;
+        //}
     public int Precio { get; set; } = 500;
     public double Blindaje { get; set; } = 5;
     public double Velocidad { get; set; } = 7;

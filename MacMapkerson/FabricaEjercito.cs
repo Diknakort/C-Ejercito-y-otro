@@ -9,7 +9,7 @@ namespace MacMapkerson
     public class FabricaEjercito : IFabricaEjercito
     {
         public IValidador Validador { get ; set ; }
-        public IMilitar DameEjercito1(EnumTipoArma tipo)
+        public IMilitar DameEjercito(EnumTipoArma tipo)
         {
             IMilitar militar = null;
             switch (tipo)
@@ -22,9 +22,8 @@ namespace MacMapkerson
                 case EnumTipoArma.CanonAntiaereo: militar = new CanonAntiaereo() ; break;
                 case EnumTipoArma.TorpederoMovil: militar = new TorpederoMovil() ; break;
                 case EnumTipoArma.Canon: militar = new Canon( ) ; break;
-                case EnumTipoArma.SuperTanque: militar =
-                        new DecoradorSuperPiloto( new DecoradorArena( new DecoradorSuperBomba( new TanqueAtaqueSombrasVB98()))); break;
-                    default: militar = new InfanteriaBasica( 250,  0,  6,  7); break;
+                case EnumTipoArma.SuperTanque: militar = new DecoradorSuperPiloto(new DecoradorArena(new DecoradorSuperBomba(new TanqueAtaqueSombrasVB98()))); break;
+                default: militar = new InfanteriaBasica( 250,  0,  6,  7); break;
             }
             return militar;
         }
@@ -46,4 +45,4 @@ namespace MacMapkerson
 //            new DecoradorSuperPiloto(new DecoradorArena(new DecoradorSuperBomba(new TanqueAtaqueSombrasVB98(15600, 4.8, 7.3, 9.8)))); break;
 //    default: militar = new InfanteriaBasica(250, 0, 6, 7); break;
 //}
-return militar;
+//return militar;
