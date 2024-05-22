@@ -29,7 +29,7 @@ Console.WriteLine($"Coste del Ejercito:  {Militronchos.dameCosteAcumulado()}");
 Console.WriteLine($"Capacidad Militar del Ejercito:  {Militronchos.dameCapacidadMilitar()}");
 /////////////////////// original 9 opciones /////////////////
 var entrada = "";
-ISuperTank tank = new TanqueAtaqueSombrasVB98();
+//ISuperUnidad SoldadoUniversal = new TanqueAtaqueSombrasVB98();
 while (entrada.ToUpper() != "X")
 {
     entrada = MuestraOpciones();
@@ -81,10 +81,12 @@ string MuestraOpciones()
     Console.WriteLine("1 - Transporte MX7899");
     Console.WriteLine("2 - Tanque de Ataque Sombras VB98");
     Console.WriteLine("3 - Transporte Rapido TAXIN 66");
+    Console.WriteLine("");
     Console.WriteLine("Elementos de INFANTERIA");
     Console.WriteLine("4 - Infanteria Basica");
     Console.WriteLine("5 - Ametrallador");
     Console.WriteLine("6 - Sanitario");
+    Console.WriteLine("");
     Console.WriteLine("Elementos de ARTILLERIA");
     Console.WriteLine("7 - Canon Antiaereo");
     Console.WriteLine("8 - TorpederoMovil");
@@ -92,6 +94,8 @@ string MuestraOpciones()
     Console.WriteLine("");
     Console.WriteLine("Elementos Mejorados");
     Console.WriteLine("0 - SuperTank");
+    Console.WriteLine("");
+    Console.WriteLine("");
     Console.WriteLine("Para ver los datos del ejercito");
     Console.WriteLine("D - Mostrar Datos tecnicos de combate");    
     Console.WriteLine("L - Mostrar Lista de elementos");

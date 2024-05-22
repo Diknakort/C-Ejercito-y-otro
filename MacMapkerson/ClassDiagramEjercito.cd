@@ -124,10 +124,17 @@
       <FileName>IColeccionEjercito.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="MacMapkerson.ISuperUnidad">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISuperUnidad.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Enum Name="MacMapkerson.EnumTipoArma">
     <Position X="0.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgBAAAAAIAAABAAAAAAAAEAAIgAAAAAAAAAAAEQAA=</HashCode>
+      <HashCode>AAAgBAAAAAIAAABAAAAAAAAEAAIgEAAAAAAAAAAEQAA=</HashCode>
       <FileName>EnumTipoArma.cs</FileName>
     </TypeIdentifier>
   </Enum>

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MacMapkerson
 {
-    public class Canon : IMilitar
+    public class Canon : IMilitar, ISuperUnidad
     {
         public Canon()
         {
@@ -25,6 +25,8 @@ namespace MacMapkerson
         public double Velocidad { get; set; } = 0;
         public double PotenciaDeFuego { get; set; } = 14;
         public string Tipo { get; set; }
+        public string Nombre { get; set; } = "Canon";
+
 
         public double dameCoefMilitar()
         {
@@ -34,6 +36,10 @@ namespace MacMapkerson
         public void dameEjercito()
         {
             throw new NotImplementedException();
+        }
+        public override string? ToString()
+        {
+            return ($"La unidad seleccionada es: {Nombre}");
         }
     }
 }

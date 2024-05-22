@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MacMapkerson
 {
-    public class TorpederoMovil : IMilitar
+    public class TorpederoMovil : IMilitar, ISuperUnidad
     {
         public TorpederoMovil()
         {
@@ -24,6 +24,8 @@ namespace MacMapkerson
         public double Velocidad { get; set; } = 3;
         public double PotenciaDeFuego { get; set; } = 19;
         public string Tipo { get; set; }
+        public string Nombre { get; set; } = "Torpedero Movil";
+
         public double dameCoefMilitar()
         {
             return (PotenciaDeFuego * Velocidad) / 2 / (100 - Blindaje);
@@ -32,6 +34,10 @@ namespace MacMapkerson
         public void dameEjercito()
         {
             throw new NotImplementedException();
+        }
+        public override string? ToString()
+        {
+            return ($"La unidad seleccionada es: {Nombre}");
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MacMapkerson
 {
-    public class InfanteriaBasica : IMilitar
+    public class InfanteriaBasica : IMilitar, ISuperUnidad
     {
         public InfanteriaBasica(int Precio, double Blindaje, double Velocidad, double PotenciaDeFuego)
         {
@@ -20,6 +20,8 @@ namespace MacMapkerson
         public double Velocidad { get; set; }
         public double PotenciaDeFuego { get; set; }
         public string Tipo { get; set; }
+        public string Nombre { get; set; } = "Infanteria Basica";
+
 
         public double dameCoefMilitar()
         {
@@ -29,6 +31,10 @@ namespace MacMapkerson
         public void dameEjercito()
         {
             throw new NotImplementedException();
+        }
+        public override string? ToString()
+        {
+            return ($"La unidad seleccionada es: {Nombre}");
         }
     }
 }

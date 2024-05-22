@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MacMapkerson
 {
-    public class TransporteRapidoTAXIN66 : IMilitar
+    public class TransporteRapidoTAXIN66 : IMilitar, ISuperUnidad
     {
         public TransporteRapidoTAXIN66()
         {
@@ -23,6 +23,8 @@ namespace MacMapkerson
         public double Velocidad { get; set; } = 12;
         public double PotenciaDeFuego { get; set; } = 0;
         public string Tipo { get; set; }
+        public string Nombre { get; set; } = "Transporte Rapido TAXIN66";
+
 
         public double dameCoefMilitar()
         {
@@ -32,6 +34,10 @@ namespace MacMapkerson
         public void dameEjercito()
         {
             throw new NotImplementedException();
+        }
+        public override string? ToString()
+        {
+            return ($"La unidad seleccionada es: {Nombre}");
         }
     }
 }
