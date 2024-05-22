@@ -36,27 +36,44 @@ while (entrada.ToUpper() != "X")
     switch (entrada)
     {
         case "1":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteMX7899)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteMX7899));
+            Console.WriteLine("Has sumado al ejercito un Transporte MX7899"); break;
         case "2":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TanqueAtaqueSombrasVB98)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TanqueAtaqueSombrasVB98));
+            Console.WriteLine("Has sumado al ejercito un Tanque de Ataque Sombras VB98"); break;
         case "3":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteRapidoTAXIN66)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TransporteRapidoTAXIN66));
+            Console.WriteLine("Has sumado al ejercito un Transporte Rapido TAXIN66 "); break;
         case "4":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Ametrallador)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Ametrallador));
+            Console.WriteLine("Has sumado al ejercito un Ametrallador "); break;
         case "5":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.InfanteriaBasica)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.InfanteriaBasica));
+            Console.WriteLine("Has sumado al ejercito un Infanteria Basica "); break;
         case "6":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Sanitario)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Sanitario));
+            Console.WriteLine("Has sumado al ejercito un Sanitario "); break;
         case "7":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.CanonAntiaereo)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.CanonAntiaereo)); Console.WriteLine("Has sumado al ejercito un Canon Antiaereo "); break;
         case "8":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Canon)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.Canon)); Console.WriteLine("Has sumado al ejercito un Canon "); break;
         case "9":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TorpederoMovil)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.TorpederoMovil)); Console.WriteLine("Has sumado al ejercito un Torpedero Movil "); break;
         case "0":
-            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.SuperTanque)); break;
+            Console.Clear();
+            Militronchos.Add(MiFabrica.DameEjercito(EnumTipoArma.SuperTanque)); Console.WriteLine("Has sumado al ejercito un Super Tanque "); break;
         case "D":
         case "d":
+            Console.Clear();
             Console.WriteLine($"-----------------------------------------------------------");
             Console.WriteLine($"Elementos que hay en el Ejercito:  {Militronchos.dameCuantos()}");
             Console.WriteLine($"Potencia de fuego del Ejercito:  {Militronchos.damePotenciaDeFuegoTotal()}");
@@ -68,6 +85,7 @@ while (entrada.ToUpper() != "X")
             break;
         case "L":
         case "l":
+            Console.Clear();
             Console.WriteLine($"El ejercito contiene los siguientes elementos:");
             Console.WriteLine($"{Militronchos.Listar()}"); break;
     }
@@ -75,7 +93,6 @@ while (entrada.ToUpper() != "X")
 string MuestraOpciones()
 {
     Console.WriteLine($"------------------------------------------------------------------------------------");
-    Console.WriteLine("");
     Console.WriteLine("Seleccione el elemento a añadir de los siguientes 9:");
     Console.WriteLine("Elementos de CABALLERIA");
     Console.WriteLine("1 - Transporte MX7899");
@@ -94,7 +111,6 @@ string MuestraOpciones()
     Console.WriteLine("");
     Console.WriteLine("Elementos Mejorados");
     Console.WriteLine("0 - SuperTank");
-    Console.WriteLine("");
     Console.WriteLine("");
     Console.WriteLine("Para ver los datos del ejercito");
     Console.WriteLine("D - Mostrar Datos tecnicos de combate");    
